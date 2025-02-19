@@ -1,0 +1,143 @@
+{
+        "events": [
+          {
+            "id": 1,
+            "name": "Summer Music Festival",
+            "dateTime": "2025-06-05 18:00:00",
+            "venueName": "Downtown Arena",
+            "venueAddress": "456 Music Blvd, Downtown City",
+            "venueCapacity": 10000,
+            "organizer": "Live Concerts Co.",
+            "description": "A grand music festival featuring top artists, local performers, and food stalls.",
+            "ticketsAvailable": 2000,
+            "category": "Music Festival",
+            "price": "$50 - $250",
+            "ageRestriction": "All Ages",
+            "posterURL": "https://brandpacks.com/wp-content/uploads/edd/2023/05/summer-music-festival-poster-template-03.jpg",
+            "duration": "6 hours",
+            "soldTickets": 8000
+          },
+          {
+            "id": 2,
+            "name": "Tech Innovation Expo",
+            "dateTime": "2025-07-10 09:00:00",
+            "venueName": "Innovation Center",
+            "venueAddress": "789 Tech Park, Silicon Valley",
+            "venueCapacity": 5000,
+            "organizer": "Tech Innovators",
+            "description": "Explore the latest in technology with hands-on demonstrations, speakers, and tech giants.",
+            "ticketsAvailable": 1000,
+            "category": "Technology Expo",
+            "price": "$100 - $500",
+            "ageRestriction": "18+",
+            "posterURL": "https://static.vecteezy.com/system/resources/previews/041/180/849/non_2x/technology-event-poster-editor_template.jpeg",
+            "duration": "8 hours",
+            "soldTickets": 3000
+          },
+          {
+            "id": 3,
+            "name": "Gourmet Food Tasting",
+            "dateTime": "2025-08-01 17:00:00",
+            "venueName": "Gourmet Hall",
+            "venueAddress": "123 Tasting Ln, Foodie City",
+            "venueCapacity": 500,
+            "organizer": "Foodie Events",
+            "description": "A culinary journey featuring tasting stations from local chefs, food trucks, and exclusive wines.",
+            "ticketsAvailable": 150,
+            "category": "Food & Drink",
+            "price": "$80",
+            "ageRestriction": "21+",
+            "posterURL": "https://img.lovepik.com/free-template/01/64/75/88QpIkbEsTidh.jpg_master.jpg!detail808",
+            "duration": "4 hours",
+            "soldTickets": 350
+          }
+        ],
+  
+            "users": [
+              {
+                "id": 1,
+                "role": "admin",
+                "username": "john_doe",
+                "email": "john@example.com",
+                "password": "password123",
+                "balance": 1000,
+                "profilePictureURL": "https://static.vecteezy.com/system/resources/previews/043/900/708/non_2x/user-profile-icon-illustration-vector.jpg",
+                "favorites": [
+                  {
+                    "id": 1,
+                    "eventId": 2
+                  },
+                  {
+                    "id": 2,
+                    "eventId": 3
+                  }
+                ],
+                "accountCreationDate": "2023-01-01",
+                "totalSpentMoney": 200
+              },
+              {
+                "id": 2,
+                "role": "user",
+                "username": "jane_smith",
+                "email": "jane@example.com",
+                "password": "securepassword",
+                "balance": 500,    
+                "profilePictureURL": "https://cdn-icons-png.flaticon.com/512/4166/4166820.png",
+                "favorites": [
+                  {
+                    "id": 1,
+                    "eventId": 1
+                  }
+                ],
+                "accountCreationDate": "2024-02-15",
+                "totalSpentMoney": 150
+              },
+              {
+                "id": 3,
+                "role": "user",
+                "username": "mike_jones",
+                "email": "mike@example.com",
+                "password": "mypassword",
+                "balance": 250,
+                "profilePictureURL": "https://png.pngtree.com/png-clipart/20231019/original/pngtree-user-profile-avatar-png-image_13369988.png",
+                "favorites": [
+                  {
+                    "id": 1,
+                    "eventId": 3
+                  }
+                ],
+                "accountCreationDate": "2024-01-10",
+                "totalSpentMoney": 50
+              }        
+    ],
+  
+    "tickets": [
+        {
+            "id": 1,
+            "userId": 1,
+            "eventId": 2,
+            "quantity": 2,
+            "price": 150,
+            "purchaseDate": "2025-06-01",
+            "ticketCode": "TICKET-1001"
+          },
+          {
+            "id": 2,
+            "userId": 2,
+            "eventId": 1,
+            "quantity": 1,
+            "price": 75,
+            "purchaseDate": "2025-06-02",
+            "ticketCode": "TICKET-1002"
+          },
+          {
+            "id": 3,
+            "userId": 2,
+            "eventId": 3,
+            "quantity": 3,
+            "price": 90,
+            "purchaseDate": "2025-06-03",
+            "ticketCode": "TICKET-1003"
+          }
+    ]
+}
