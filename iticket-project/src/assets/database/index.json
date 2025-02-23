@@ -158,20 +158,6 @@
       ],
       "accountCreationDate": "2024-01-10",
       "totalSpentMoney": 50
-    },
-    {
-      "id": "1b9d",
-      "username": "narmina",
-      "email": "narmina_90@bk.ru",
-      "password": "785",
-      "role": "Client"
-    },
-    {
-      "id": "4517",
-      "role": "Client",
-      "username": "murad",
-      "email": "murad_20@bk.ru",
-      "password": "896"
     }
   ],
   "tickets": [
