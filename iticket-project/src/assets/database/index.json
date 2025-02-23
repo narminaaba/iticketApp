@@ -1,143 +1,206 @@
 {
-        "events": [
-          {
-            "id": 1,
-            "name": "Summer Music Festival",
-            "dateTime": "2025-06-05 18:00:00",
-            "venueName": "Downtown Arena",
-            "venueAddress": "456 Music Blvd, Downtown City",
-            "venueCapacity": 10000,
-            "organizer": "Live Concerts Co.",
-            "description": "A grand music festival featuring top artists, local performers, and food stalls.",
-            "ticketsAvailable": 2000,
-            "category": "Music Festival",
-            "price": "$50 - $250",
-            "ageRestriction": "All Ages",
-            "posterURL": "https://brandpacks.com/wp-content/uploads/edd/2023/05/summer-music-festival-poster-template-03.jpg",
-            "duration": "6 hours",
-            "soldTickets": 8000
-          },
-          {
-            "id": 2,
-            "name": "Tech Innovation Expo",
-            "dateTime": "2025-07-10 09:00:00",
-            "venueName": "Innovation Center",
-            "venueAddress": "789 Tech Park, Silicon Valley",
-            "venueCapacity": 5000,
-            "organizer": "Tech Innovators",
-            "description": "Explore the latest in technology with hands-on demonstrations, speakers, and tech giants.",
-            "ticketsAvailable": 1000,
-            "category": "Technology Expo",
-            "price": "$100 - $500",
-            "ageRestriction": "18+",
-            "posterURL": "https://static.vecteezy.com/system/resources/previews/041/180/849/non_2x/technology-event-poster-editor_template.jpeg",
-            "duration": "8 hours",
-            "soldTickets": 3000
-          },
-          {
-            "id": 3,
-            "name": "Gourmet Food Tasting",
-            "dateTime": "2025-08-01 17:00:00",
-            "venueName": "Gourmet Hall",
-            "venueAddress": "123 Tasting Ln, Foodie City",
-            "venueCapacity": 500,
-            "organizer": "Foodie Events",
-            "description": "A culinary journey featuring tasting stations from local chefs, food trucks, and exclusive wines.",
-            "ticketsAvailable": 150,
-            "category": "Food & Drink",
-            "price": "$80",
-            "ageRestriction": "21+",
-            "posterURL": "https://img.lovepik.com/free-template/01/64/75/88QpIkbEsTidh.jpg_master.jpg!detail808",
-            "duration": "4 hours",
-            "soldTickets": 350
-          }
-        ],
-  
-            "users": [
-              {
-                "id": 1,
-                "role": "admin",
-                "username": "john_doe",
-                "email": "john@example.com",
-                "password": "password123",
-                "balance": 1000,
-                "profilePictureURL": "https://static.vecteezy.com/system/resources/previews/043/900/708/non_2x/user-profile-icon-illustration-vector.jpg",
-                "favorites": [
-                  {
-                    "id": 1,
-                    "eventId": 2
-                  },
-                  {
-                    "id": 2,
-                    "eventId": 3
-                  }
-                ],
-                "accountCreationDate": "2023-01-01",
-                "totalSpentMoney": 200
-              },
-              {
-                "id": 2,
-                "role": "user",
-                "username": "jane_smith",
-                "email": "jane@example.com",
-                "password": "securepassword",
-                "balance": 500,    
-                "profilePictureURL": "https://cdn-icons-png.flaticon.com/512/4166/4166820.png",
-                "favorites": [
-                  {
-                    "id": 1,
-                    "eventId": 1
-                  }
-                ],
-                "accountCreationDate": "2024-02-15",
-                "totalSpentMoney": 150
-              },
-              {
-                "id": 3,
-                "role": "user",
-                "username": "mike_jones",
-                "email": "mike@example.com",
-                "password": "mypassword",
-                "balance": 250,
-                "profilePictureURL": "https://png.pngtree.com/png-clipart/20231019/original/pngtree-user-profile-avatar-png-image_13369988.png",
-                "favorites": [
-                  {
-                    "id": 1,
-                    "eventId": 3
-                  }
-                ],
-                "accountCreationDate": "2024-01-10",
-                "totalSpentMoney": 50
-              }        
-    ],
-  
-    "tickets": [
+  "events": [
+    {
+      "id": 1,
+      "name": "City Sightseeing Tour",
+      "dateTime": "2025-06-15T09:00:00",
+      "venueName": "Central Park",
+      "venueAddress": "New York, Central Park",
+      "venueCapacity": 200,
+      "organizer": "Explore NYC",
+      "description": "Join us for a guided sightseeing tour around New York City, visiting top landmarks.",
+      "ticketsAvailable": 150,
+      "category": "tourism",
+      "price": 50,
+      "ageRestriction": "0+",
+      "posterURL": "https://i.pinimg.com/564x/e3/73/a7/e373a7f7fd9ece137659d452ba1370ef.jpg",
+      "duration": "3 hours",
+      "soldTickets": 50
+    },
+    {
+      "id": 2,
+      "name": "The Grand Movie Premiere",
+      "dateTime": "2025-07-20T19:00:00",
+      "venueName": "Cinema City",
+      "venueAddress": "123 Movie Street, Los Angeles",
+      "venueCapacity": 500,
+      "organizer": "MovieStars Productions",
+      "description": "Be the first to watch the latest blockbuster movie at our exclusive premiere event.",
+      "ticketsAvailable": 450,
+      "category": "movie",
+      "price": 25,
+      "ageRestriction": "18+",
+      "posterURL": "https://lh6.googleusercontent.com/proxy/R3Ti0GPa5IZYYz3TXCx99RdDM3ORlZk9DwXbOXAZz7mnBxAq3PHhVhkUJJJ_7FxQSI_mGhLt1CARwgHY_gc_nbXG0domUNIX4rdxnx24",
+      "duration": "2 hours 30 minutes",
+      "soldTickets": 50
+    },
+    {
+      "id": 3,
+      "name": "Rock Legends Concert",
+      "dateTime": "2025-08-10T20:00:00",
+      "venueName": "Stadium Arena",
+      "venueAddress": "456 Concert Blvd, Miami",
+      "venueCapacity": 10000,
+      "organizer": "MusicWorld Events",
+      "description": "An unforgettable night of rock music with the best bands in the world.",
+      "ticketsAvailable": 8000,
+      "category": "music",
+      "price": 75,
+      "ageRestriction": "18+",
+      "posterURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkEJoS96u1DnV6E7gYVJaaRBZDQlMm-ikC5A&s",
+      "duration": "4 hours",
+      "soldTickets": 2000
+    },
+    {
+      "id": 4,
+      "name": "Sunset Beach Tour",
+      "dateTime": "2025-06-30T17:00:00",
+      "venueName": "Sunset Beach",
+      "venueAddress": "California Coastline",
+      "venueCapacity": 100,
+      "organizer": "Adventure Tours",
+      "description": "Relax and unwind on a beautiful sunset tour along the coast with a beach bonfire.",
+      "ticketsAvailable": 60,
+      "category": "tourism",
+      "price": 60,
+      "ageRestriction": "0+",
+      "posterURL": "https://thumbs.dreamstime.com/b/summer-vacation-tropical-sunset-travel-poster-ocean-sea-palms-sky-beach-tourism-concept-template-placard-flyer-postcard-vintage-270024702.jpg",
+      "duration": "2 hours",
+      "soldTickets": 20
+    },
+    {
+      "id": 5,
+      "name": "Horror Movie Night",
+      "dateTime": "2025-10-01T22:00:00",
+      "venueName": "Nightmare Cinema",
+      "venueAddress": "789 Spooky Ave, San Francisco",
+      "venueCapacity": 300,
+      "organizer": "Spooky Films",
+      "description": "A thrilling horror movie marathon featuring classic horror films.",
+      "ticketsAvailable": 250,
+      "category": "movie",
+      "price": 30,
+      "ageRestriction": "R",
+      "posterURL": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/horror-movie-night-design-template-5bfb6a687b0344c7b245b643227fe9bb_screen.jpg?ts=1696579401",
+      "duration": "5 hours",
+      "soldTickets": 50
+    },
+    {
+      "id": 6,
+      "name": "Jazz Music Night",
+      "dateTime": "2025-09-05T18:00:00",
+      "venueName": "Blue Note Jazz Club",
+      "venueAddress": "101 Jazz St, New York",
+      "venueCapacity": 150,
+      "organizer": "JazzLive Events",
+      "description": "An evening of smooth jazz music with live performances by top jazz artists.",
+      "ticketsAvailable": 120,
+      "category": "music",
+      "price": 40,
+      "ageRestriction": "0+",
+      "posterURL": "https://as2.ftcdn.net/v2/jpg/02/95/38/05/1000_F_295380540_TrAVpbroRSqXNj6UlvbHetEVnAmNxBSH.jpg",
+      "duration": "3 hours",
+      "soldTickets": 30
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "role": "admin",
+      "username": "john_doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "balance": 1000,
+      "profilePictureURL": "https://static.vecteezy.com/system/resources/previews/043/900/708/non_2x/user-profile-icon-illustration-vector.jpg",
+      "favorites": [
         {
-            "id": 1,
-            "userId": 1,
-            "eventId": 2,
-            "quantity": 2,
-            "price": 150,
-            "purchaseDate": "2025-06-01",
-            "ticketCode": "TICKET-1001"
-          },
-          {
-            "id": 2,
-            "userId": 2,
-            "eventId": 1,
-            "quantity": 1,
-            "price": 75,
-            "purchaseDate": "2025-06-02",
-            "ticketCode": "TICKET-1002"
-          },
-          {
-            "id": 3,
-            "userId": 2,
-            "eventId": 3,
-            "quantity": 3,
-            "price": 90,
-            "purchaseDate": "2025-06-03",
-            "ticketCode": "TICKET-1003"
-          }
-    ]
+          "id": 1,
+          "eventId": 2
+        },
+        {
+          "id": 2,
+          "eventId": 3
+        }
+      ],
+      "accountCreationDate": "2023-01-01",
+      "totalSpentMoney": 200
+    },
+    {
+      "id": "2",
+      "role": "user",
+      "username": "jane_smith",
+      "email": "jane@example.com",
+      "password": "securepassword",
+      "balance": 500,
+      "profilePictureURL": "https://cdn-icons-png.flaticon.com/512/4166/4166820.png",
+      "favorites": [
+        {
+          "id": 1,
+          "eventId": 1
+        }
+      ],
+      "accountCreationDate": "2024-02-15",
+      "totalSpentMoney": 150
+    },
+    {
+      "id": "3",
+      "role": "user",
+      "username": "mike_jones",
+      "email": "mike@example.com",
+      "password": "mypassword",
+      "balance": 250,
+      "profilePictureURL": "https://png.pngtree.com/png-clipart/20231019/original/pngtree-user-profile-avatar-png-image_13369988.png",
+      "favorites": [
+        {
+          "id": 1,
+          "eventId": 3
+        }
+      ],
+      "accountCreationDate": "2024-01-10",
+      "totalSpentMoney": 50
+    },
+    {
+      "id": "1b9d",
+      "username": "narmina",
+      "email": "narmina_90@bk.ru",
+      "password": "785",
+      "role": "Client"
+    },
+    {
+      "id": "4517",
+      "role": "Client",
+      "username": "murad",
+      "email": "murad_20@bk.ru",
+      "password": "896"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "1",
+      "userId": 1,
+      "eventId": 2,
+      "quantity": 2,
+      "price": 150,
+      "purchaseDate": "2025-06-01",
+      "ticketCode": "TICKET-1001"
+    },
+    {
+      "id": "2",
+      "userId": 2,
+      "eventId": 1,
+      "quantity": 1,
+      "price": 75,
+      "purchaseDate": "2025-06-02",
+      "ticketCode": "TICKET-1002"
+    },
+    {
+      "id": "3",
+      "userId": 2,
+      "eventId": 3,
+      "quantity": 3,
+      "price": 90,
+      "purchaseDate": "2025-06-03",
+      "ticketCode": "TICKET-1003"
+    }
+  ]
 }

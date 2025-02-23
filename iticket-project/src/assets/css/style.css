@@ -2,16 +2,25 @@
     height: 80vh;
 }
 .logo {
-    width: 90px;
-    height: 70px;
-    border: none;
+    width: 85px;
+    height: 60px;
+    border-radius: 5px;
 }
 .text {
     text-decoration: none;
     color: white;
+    border: none;
 }
 .sign {
     text-decoration: none;
-    color: black;
+    color: white;
 }
-
+.favorite{
+    border: none;
+    background-color: white;
+}
+.available {
+    width: 8vw;
+    border-radius: 5px;
+    margin: 3px;
+}
