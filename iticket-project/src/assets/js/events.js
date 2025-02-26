@@ -11,7 +11,7 @@ const elements= apiResponse.data;
       allEvents.innerHTML += `<div class="col-md-4 py-4" >
           <div class="card">
             <img src=${element.posterURL} class="card-img-top" style="height: 65vh;" alt="${element.name}">
-          <button class="available"> ${element.ticketsAvailable} ticket</button>
+          <button class="btn btn-warning nav-item" id="available"> ${element.ticketsAvailable} ticket</button> 
             <div class="card-body">
               <h5 class="card-title">             
               <a style="text-decoration:none" href="./eventDetails.html?id=${element.id}"> ${element.name}</a> 

@@ -19,7 +19,7 @@ loginForm.addEventListener("submit", async function (e) {
     if (checkValidUser) {
     localStorage.setItem("userID", JSON.stringify(checkValidUser.id));
     const isAdmin = checkValidUser.email === "john@example.com";
-    const checkValidRole = isAdmin ? "http://localhost:5173/adminpage.html" : "http://localhost:5173/user.html";
+    const checkValidRole = isAdmin ? "./adminpage.html" : `./user.html?id=${checkValidUser.id}`;
 
     setTimeout(() => {
         window.location.replace(checkValidRole);

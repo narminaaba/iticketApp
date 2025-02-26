@@ -13,7 +13,7 @@
       "category": "tourism",
       "price": 50,
       "ageRestriction": "0+",
-      "posterURL": "https://i.pinimg.com/564x/e3/73/a7/e373a7f7fd9ece137659d452ba1370ef.jpg",
+      "posterURL": "https://img.elegantflyer.com/templates/preview/voyage-flyer-psd-template-facebook-cover-56972.jpg",
       "duration": "3 hours",
       "soldTickets": 50
     },
@@ -30,7 +30,7 @@
       "category": "movie",
       "price": 25,
       "ageRestriction": "18+",
-      "posterURL": "https://lh6.googleusercontent.com/proxy/R3Ti0GPa5IZYYz3TXCx99RdDM3ORlZk9DwXbOXAZz7mnBxAq3PHhVhkUJJJ_7FxQSI_mGhLt1CARwgHY_gc_nbXG0domUNIX4rdxnx24",
+      "posterURL": "https://img.freepik.com/free-vector/cinema-movie-festival-vertical-poster-template_23-2149964731.jpg?semt=ais_hybrid",
       "duration": "2 hours 30 minutes",
       "soldTickets": 50
     },
@@ -47,7 +47,7 @@
       "category": "music",
       "price": 75,
       "ageRestriction": "18+",
-      "posterURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkEJoS96u1DnV6E7gYVJaaRBZDQlMm-ikC5A&s",
+      "posterURL": "https://static.vecteezy.com/system/resources/previews/000/572/993/original/vector-music-festival-poster-template.jpg",
       "duration": "4 hours",
       "soldTickets": 2000
     },
@@ -158,6 +158,27 @@
       ],
       "accountCreationDate": "2024-01-10",
       "totalSpentMoney": 50
+    },
+    {
+      "id": "6923",
+      "role": "client",
+      "username": "narmina",
+      "email": "narmina_90@bk.ru",
+      "password": "852"
+    },
+    {
+      "id": "1ba8",
+      "role": "client",
+      "username": "murad",
+      "email": "murad_20@bk.ru",
+      "password": "963"
+    },
+    {
+      "id": "0f8c",
+      "role": "client",
+      "username": "ferhad",
+      "email": "ferhad_20@bk.ru",
+      "password": "852"
     }
   ],
   "tickets": [

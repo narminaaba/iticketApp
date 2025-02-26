@@ -8,18 +8,13 @@
 }
 .text {
     text-decoration: none;
-    color: white;
-    border: none;
-}
-.sign {
-    text-decoration: none;
-    color: white;
-}
+} 
+
 .favorite{
     border: none;
     background-color: white;
 }
-.available {
+#available {
     width: 8vw;
     border-radius: 5px;
     margin: 3px;

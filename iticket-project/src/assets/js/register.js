@@ -24,14 +24,14 @@ registerForm.addEventListener("submit", async (e) => {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Something went wrong!",
+            text: "Wrong username or password!",
         });
         return;
     } else if (nondublicatePassword) {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Wrong password!",
+            text: "Wrong username or password!",
         });
         return;
     } else {

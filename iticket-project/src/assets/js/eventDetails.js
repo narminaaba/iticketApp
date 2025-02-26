@@ -12,8 +12,8 @@ window.addEventListener("load", async function (e) {
     if (checkEvent) {
         eventDetails.innerHTML += `<div class="col-md-5" >
             <div class="card" style="height:74vh">
-            <img  src=${checkEvent.posterURL}  style="height:40.5vh" alt="${checkEvent.category}"><br>
-               <span style="margin:3px"> <button style="border-radius:7px;">${checkEvent.ageRestriction}</button></span>
+            <img  src=${checkEvent.posterURL}  style="height:40.5vh" alt="${checkEvent.category}">
+               <span style="margin:3px"> <button class="btn btn-warning nav-item" style="border-radius:7px;">${checkEvent.ageRestriction}</button></span>
                     <div class="card-body text-center">
                     <br>
                     <h5 class="card-title">${checkEvent.name}</h5>
