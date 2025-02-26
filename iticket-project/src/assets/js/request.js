@@ -62,7 +62,7 @@ async function updateOne(endpoint, payLoad, id) {
         error: null,
     };
     await axios
-        .patch(API_BASE_URL + endpoint + `${id}`, payLoad)
+        .put(API_BASE_URL + endpoint + `${id}`, payLoad)
         .then((responce) => {
             result.data = responce.data;
         }).catch((err) => {

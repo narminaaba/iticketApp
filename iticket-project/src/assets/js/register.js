@@ -17,7 +17,7 @@ registerForm.addEventListener("submit", async (e) => {
         (x) =>
             x.username == registerInputs.username.value ||
             x.email == registerInputs.email.value
-);
+    );
     const nondublicatePassword =
         registerInputs.confirmPassword.value !== registerInputs.password.value;
     if (dublicateUser) {
@@ -36,10 +36,10 @@ registerForm.addEventListener("submit", async (e) => {
         return;
     } else {
         const newUser = {
-            role:  registerInputs.role.value.trim(),
-           username: registerInputs.username.value.trim(),
+            role: registerInputs.role.value.trim(),
+            username: registerInputs.username.value.trim(),
             email: registerInputs.email.value.trim(),
-           password:  registerInputs.password.value.trim(),
+            password: registerInputs.password.value.trim(),
         };
 
         const postResponse = await controller.post(endpoints.users, newUser);

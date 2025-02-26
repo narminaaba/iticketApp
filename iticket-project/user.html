@@ -43,9 +43,10 @@
 <div class="container w-50 mt-5 ">
     <div class="row">
         <div class="col-md-2">
-            <div class="card">
-                <img  src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541" alt="Profile">
-                <!-- <input type="text" class="form-control" id="profilePictureURL" > -->
+            <div class="card"> 
+                <a href="" id="profilePictureURL">
+                <img  src="" alt="Profile">
+              </a>
             </div>
         </div>
 
@@ -55,20 +56,27 @@
                     <form>
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="username" value="johndoe123" >
+                            <input type="text" class="form-control" name="username" id="username" >
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" value="johndoe@example.com" disabled>
+                            <input type="email" class="form-control" name="email" id="email"  disabled>
                         </div>
-                        <!-- <div class="mb-3">
+                        <div class="mb-3">
                             <label for="password" class="form-label">Change Password</label>
                             <input type="password" class="form-control" id="password" >
-                        </div> -->
-                        <div class="mb-3">
-                            <label for="text" class="form-label">Account Create Date</label>
-                            <input type="text" class="form-control" id="createDate" disabled >
                         </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="password" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="createDate" class="form-label">Account Create Date</label>
+                            <input type="text" class="form-control" name="createDate" id="createDate" disabled >
+                        </div>
+                        <button type="button" id="balance" class="btn btn-success"></button>
+                        <button type="button" id="totalSpentMoney" class="btn btn-danger">Total spent money</button>
+                        <br> <br>
                         <button type="button" id="editProfile" class="btn btn-warning">Edit Profile</button>
                     </form>
                 </div>
@@ -108,6 +116,7 @@
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.0/dist/umd/popper.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="./src/assets/js/navbar.js"></script>
     <script type="module" src="./src/assets/js/user.js"></script>
 </body>
