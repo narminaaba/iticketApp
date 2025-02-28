@@ -3,13 +3,13 @@ import controller from "./request.js";
 const allEvents = document.querySelector("#allEvents");
 
 window.addEventListener("load", async function () {
-  const apiResponse = await controller.getAll(endpoints.events);
-const elements= apiResponse.data;
-let counter = 1;
-  allEvents.innerHTML = "";
-  elements.forEach(element => {
-    if (element.id) {
-      allEvents.innerHTML += `                <tr>
+    const apiResponse = await controller.getAll(endpoints.events);
+    const elements = apiResponse.data;
+    let counter = 1;
+    allEvents.innerHTML = "";
+    elements.forEach(element => {
+        if (element.id) {
+            allEvents.innerHTML += `                <tr>
                     <td>${counter++}</td>
                     <td id="name">${element.name} <br>  Category: ${element.category}</td>
                     <td id="dateTime">${element.dateTime}</td>
@@ -38,12 +38,11 @@ let counter = 1;
                         </button>
                     </td>
                 </tr>`
-    }
+        }
     });
 });
 
 const addForm = document.querySelector("#addForm");
 addForm.addEventListener("click", () => {
     window.location.replace("http://localhost:5173/newEvent.html")
-
 })

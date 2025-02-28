@@ -3,7 +3,7 @@ import { endpoints } from "./api.js";
 
 const loginForm = document.querySelector("#login-form");
 const loginInputs = {
-    email : document.querySelector("#email"),
+    email: document.querySelector("#email"),
     password: document.querySelector("#password"),
 };
 loginForm.addEventListener("submit", async function (e) {
@@ -15,15 +15,14 @@ loginForm.addEventListener("submit", async function (e) {
             x.password === loginInputs.password.value
         );
     });
- 
-    if (checkValidUser) {
-    localStorage.setItem("userID", JSON.stringify(checkValidUser.id));
-    const isAdmin = checkValidUser.email === "john@example.com";
-    const checkValidRole = isAdmin ? "./adminpage.html" : `./user.html?id=${checkValidUser.id}`;
 
-    setTimeout(() => {
-        window.location.replace(checkValidRole);
-    }, 1000);
+    if (checkValidUser) {
+        localStorage.setItem("userID", JSON.stringify(checkValidUser.id));
+        const isAdmin = checkValidUser.email === "john@example.com";
+        const checkValidRole = isAdmin ? "./adminpage.html" : `./user.html?id=${checkValidUser.id}`;
+        setTimeout(() => {
+            window.location.replace(checkValidRole);
+        }, 1000);
     }
 
     else {

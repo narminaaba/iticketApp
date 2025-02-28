@@ -14,11 +14,18 @@ const adminInputs = {
 
 adminForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-
+    const name = adminInputs.name.value.trim();
+    const dateTime = adminInputs.dateTime.value.trim();
+    const venue = adminInputs.venue.value.trim();
+    const organizer = adminInputs.organizer.value.trim();
+    const ticketsAvailable = adminInputs.ticketsAvailable.value.trim();
+    const price = adminInputs.price.value.trim();
+    const ageRestruction = adminInputs.ageRestruction.value.trim();
+    
     const apiResponse = await controller.getAll(endpoints.events);
     const dublicateEvent = apiResponse.data.find(
         (x) =>
-            x.name === adminInputs.name.value 
+            x.name === adminInputs.name.value
     );
     if (dublicateEvent) {
         Swal.fire({
@@ -28,18 +35,18 @@ adminForm.addEventListener("submit", async (e) => {
         });
         return;
     }
-else {
-    const newEvent = {
-        name: adminInputs.name.value.trim(),
-        dateTime: adminInputs.dateTime.value.trim(),
-        venue: adminInputs.venue.value.trim(),
-        organizer: adminInputs.organizer.value.trim(),
-        ticketsAvailable: adminInputs.ticketsAvailable.value.trim(),
-        price: adminInputs.price.value.trim(),
-        ageRestruction: adminInputs.ageRestruction.value.trim(),
-    };
+    else {
+        const newEvent = {
+            name,
+            dateTime,
+            venue,
+            organizer,
+            ticketsAvailable,
+            price,
+            ageRestruction,
+        };
         const postResponse = await controller.post(endpoints.events, newEvent);
-        if ( postResponse.data) {
+        if (postResponse.data) {
             Swal.fire({
                 title: "Good job!",
                 text: "You added your profile",
@@ -49,5 +56,5 @@ else {
                 window.location.replace("http://localhost:5173/adminpage.html")
             }, 1500);
         }
-}
+    }
 })

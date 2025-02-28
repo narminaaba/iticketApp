@@ -16,96 +16,95 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <img class="logo"
-        src="https://epointbucket.s3.eu-central-1.amazonaws.com/images/users/big/6463479026068.png"
-        alt="logo">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <img class="logo" src="https://epointbucket.s3.eu-central-1.amazonaws.com/images/users/big/6463479026068.png"
+          alt="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse login-register"  id="navbarNav">
+        <div class="collapse navbar-collapse login-register" id="navbarNav">
           <div class="navbar-nav ms-auto">
-            <a class="btn btn-light nav-item text-primary "  href="./index.html">Home</a>
-            <a class="btn btn-light nav-item mx-1 text-primary"  href="./events.html">All Events</a>
-              <a class="btn btn-light nav-item text-primary"  href="./register.html">
-                <i class="fa-solid fa-user-plus"></i>
-              </a>
-              <a id="log-out" class="btn btn-light mx-1 nav-item text-primary" style="
+            <a class="btn btn-light nav-item text-primary " href="./index.html">Home</a>
+            <a class="btn btn-light nav-item mx-1 text-primary" href="./events.html">All Events</a>
+            <a class="btn btn-light nav-item mx-1 text-primary" href="./basket.html">Basket</a>
+            <a class="btn btn-light nav-item text-primary" href="./register.html">
+              <i class="fa-solid fa-user-plus"></i>
+            </a>
+            <a id="log-out" class="btn btn-light mx-1 nav-item text-primary" style="
     border: none;" href="./login.html">
-                <i class="fa-solid fa-arrow-right-to-bracket"></i>
-              </a>
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </a>
+          </div>
         </div>
-      </div>
     </nav>
   </header>
-<main>
-  <div id="carousel">
-    <div class="bg-warning py-5 my-4">
-      <div class="container">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item  active">
-              <img src="./src/assets/media/summer voyage.jpg"
-                class="d-block w-80  mx-auto" style="height: 65vh;" alt="summer voyage">
+  <main>
+    <div id="carousel">
+      <div class="bg-warning py-5 my-4">
+        <div class="container">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item  active">
+                <img src="./src/assets/media/summer voyage.jpg" class="d-block w-80  mx-auto" style="height: 65vh;"
+                  alt="summer voyage">
+              </div>
+              <div class="carousel-item">
+                <img src="./src/assets/media/cinema-movie-festival.avif" class="d-block w-80  mx-auto"
+                  style="height: 65vh;" alt="movie-festival">
+              </div>
+              <div class="carousel-item">
+                <img src="./src/assets/media/music-festival-poster .jpg" class="d-block w-80 mx-auto"
+                  style="height: 65vh;" alt="music festival">
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="./src/assets/media/cinema-movie-festival.avif"
-                class="d-block w-80  mx-auto" style="height: 65vh;" alt="movie-festival">
-            </div>
-            <div class="carousel-item">
-              <img src="./src/assets/media/music-festival-poster .jpg" class="d-block w-80 mx-auto"
-                style="height: 65vh;" alt="music festival">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </div>
-  </div>
 
-  <section id="services"  class="bg-light py-5">
-    <div class="container">
-      <h1>Recently Events</h1>
-      <br>
-      <div class="row" id="selection">
+    <section id="services" class="bg-light py-5">
+      <div class="container">
+        <h1>Recently Events</h1>
+        <br>
+        <div class="row" id="selection">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white text-dark text-center py-4">
+    <div class="container w-50">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <h5 class="text-primary">About Us</h5>
+          <p>We are a leading company offering top-notch services in various fields. Our mission is to provide
+            the best
+            solutions to our customers.</p>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <h5 class="text-primary">Contact Info</h5>
+          <p>Email: support@example.com</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Address: 123 Main St, City, Country</p>
+        </div>
+      </div>
+      <hr class="bg-light">
+      <div class="row">
+        <div class="col-12">
+          <p>&copy; 2025 My Website | All Rights Reserved.</p>
+        </div>
       </div>
     </div>
-  </section>
-</main>
-
-<footer class="bg-white text-dark text-center py-4">
-  <div class="container w-50">
-      <div class="row">
-          <div class="col-md-6 mb-3">
-              <h5 class="text-primary">About Us</h5>
-              <p>We are a leading company offering top-notch services in various fields. Our mission is to provide
-                  the best
-                  solutions to our customers.</p>
-          </div>
-
-          <div class="col-md-6 mb-3">
-              <h5 class="text-primary">Contact Info</h5>
-              <p>Email: support@example.com</p>
-              <p>Phone: (123) 456-7890</p>
-              <p>Address: 123 Main St, City, Country</p>
-          </div>
-      </div>
-
-      <hr class="bg-light">
-
-      <div class="row">
-          <div class="col-12">
-              <p>&copy; 2025 My Website | All Rights Reserved.</p>
-          </div>
-      </div>
-  </div>
-</footer>
+  </footer>
 
 
 

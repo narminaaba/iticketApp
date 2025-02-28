@@ -158,27 +158,6 @@
       ],
       "accountCreationDate": "2024-01-10",
       "totalSpentMoney": 50
-    },
-    {
-      "id": "6923",
-      "role": "client",
-      "username": "narmina",
-      "email": "narmina_90@bk.ru",
-      "password": "852"
-    },
-    {
-      "id": "1ba8",
-      "role": "client",
-      "username": "murad",
-      "email": "murad_20@bk.ru",
-      "password": "963"
-    },
-    {
-      "id": "0f8c",
-      "role": "client",
-      "username": "ferhad",
-      "email": "ferhad_20@bk.ru",
-      "password": "852"
     }
   ],
   "tickets": [

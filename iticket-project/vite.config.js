@@ -11,6 +11,7 @@ export default defineConfig({
         events: "events.html",
         eventDetails: "eventDetails.html",
         adminpage: "adminpage.html",
+        basket: "basket.html",
       },
     },
   },

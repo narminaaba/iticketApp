@@ -1,5 +1,6 @@
 {
     "rewrites": [
+      { "source": "/basket", "destination": "/basket.html" },
       { "source": "/adminpage", "destination": "/adminpage.html" },
       { "source": "/eventDetails", "destination": "/eventDetails.html" },
       { "source": "/events", "destination": "/events.html" },

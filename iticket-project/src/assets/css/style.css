@@ -1,21 +1,30 @@
 #carousel {
     height: 80vh;
 }
+
 .logo {
     width: 85px;
     height: 60px;
     border-radius: 5px;
 }
+
 .text {
     text-decoration: none;
-} 
+}
 
-.favorite{
+.favorite {
     border: none;
     background-color: white;
 }
+
 #available {
     width: 8vw;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+#price {
+    width: 4vw;
     border-radius: 5px;
     margin: 3px;
 }

@@ -6,8 +6,8 @@ window.addEventListener("load", async function (e) {
   const userID = JSON.parse(localStorage.getItem("userID"));
   const apiUsers = await controller.getAll(endpoints.users);
   const checkValidLogin = apiUsers.data.find((x) => x.id == userID);
-  const isAdmin = checkValidLogin.email === "john@example.com";
-  const checkValidRole = isAdmin ? "./adminpage.html" : `./user.html?id=${checkValidLogin.id}`;
+  const roleAdmin = checkValidLogin.email == "john@example.com";
+  const checkValidRole = roleAdmin ? "./adminpage.html" : `./user.html?id=${checkValidLogin.id}`;
 
   if (checkValidLogin) {
     loginRegister.innerHTML = "";
