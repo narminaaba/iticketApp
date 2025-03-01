@@ -14,7 +14,8 @@ window.addEventListener("load", async function (e) {
     loginRegister.innerHTML += `
               <div class="navbar-nav ms-auto">
             <a class="btn btn-light nav-item text-primary "  href="./index.html">Home</a>
-            <a class="btn btn-light nav-item mx-1 text-primary"  href="./events.html">All Events</a>                  
+            <a class="btn btn-light nav-item mx-1 text-primary"  href="./events.html">All Events</a> 
+            <a class="btn btn-light nav-item mx-1 text-primary" href="./basket.html">Basket</a>                 
                 <a class="btn btn-light nav-item text-primary" style="text-decoration:none;" href="${checkValidRole}">
                 ${checkValidLogin.username}
               </a>
@@ -32,6 +33,7 @@ window.addEventListener("load", async function (e) {
                 <div class="navbar-nav ms-auto">
             <a class="btn btn-light nav-item text-primary "  href="./index.html">Home</a>
             <a class="btn btn-light nav-item mx-1 text-primary"  href="./events.html">All Events</a>
+            <a class="btn btn-light nav-item mx-1 text-primary" href="./basket.html">Basket</a>
               <a class="btn btn-light nav-item text-primary"  href="./register.html">
                 <i class="fa-solid fa-user-plus"></i>
               </a>

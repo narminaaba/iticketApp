@@ -3,7 +3,6 @@ import controller from "./request.js";
 import { BasketItems } from "./class.js";
 
 const selection = document.querySelector("#selection");
-const badge = document.querySelector(".badge");
 
 let basketApp = undefined;
 
@@ -40,9 +39,6 @@ window.addEventListener("load", async function () {
         showConfirmButton: false,
         timer: 1500,
       });
-      if (result.isNew) {
-        badge.textContent = Number(badge.textContent) + 1;
-      }
     });
   });
 });

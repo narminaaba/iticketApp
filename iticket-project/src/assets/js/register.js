@@ -18,7 +18,7 @@ registerForm.addEventListener("submit", async (e) => {
             x.username == registerInputs.username.value ||
             x.email == registerInputs.email.value
     );
-    const nondublicatePassword =
+    const wrongPassword =
         registerInputs.confirmPassword.value !== registerInputs.password.value;
     if (dublicateUser) {
         Swal.fire({
@@ -27,11 +27,11 @@ registerForm.addEventListener("submit", async (e) => {
             text: "Wrong username or password!",
         });
         return;
-    } else if (nondublicatePassword) {
+    } else if (wrongPassword) {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Wrong username or password!",
+            text: "Wrong password!",
         });
         return;
     } else {

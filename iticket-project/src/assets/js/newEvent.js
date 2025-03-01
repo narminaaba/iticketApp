@@ -14,6 +14,7 @@ const adminInputs = {
 
 adminForm.addEventListener("submit", async (e) => {
     e.preventDefault();
+    const apiResponse = await controller.getAll(endpoints.events);
     const name = adminInputs.name.value.trim();
     const dateTime = adminInputs.dateTime.value.trim();
     const venue = adminInputs.venue.value.trim();
@@ -22,7 +23,6 @@ adminForm.addEventListener("submit", async (e) => {
     const price = adminInputs.price.value.trim();
     const ageRestruction = adminInputs.ageRestruction.value.trim();
     
-    const apiResponse = await controller.getAll(endpoints.events);
     const dublicateEvent = apiResponse.data.find(
         (x) =>
             x.name === adminInputs.name.value

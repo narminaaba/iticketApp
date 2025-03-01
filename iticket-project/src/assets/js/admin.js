@@ -9,7 +9,7 @@ window.addEventListener("load", async function () {
     allEvents.innerHTML = "";
     elements.forEach(element => {
         if (element.id) {
-            allEvents.innerHTML += `                <tr>
+            allEvents.innerHTML += `<tr>
                     <td>${counter++}</td>
                     <td id="name">${element.name} <br>  Category: ${element.category}</td>
                     <td id="dateTime">${element.dateTime}</td>

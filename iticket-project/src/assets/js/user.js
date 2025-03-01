@@ -81,34 +81,34 @@ window.addEventListener("load", async function (e) {
 
     // })
     // }
-    const deleteButtons = document.querySelectorAll("#deleteOne");
+    // const deleteButtons = document.querySelectorAll("#deleteOne");
 
-    deleteButtons.forEach((deleteButton) => {
-        deleteButton.addEventListener("click", async function () {
-            const id = this.getAttribute("data-id");
-            const deleteOneResponse = await controller.deleteOne(endpoints.users + `/${id}`);
-            if (deleteOneResponse) {
-                Swal.fire({
-                    title: "Are you sure?",
-                    text: "You won't be able to revert this!",
-                    icon: "warning",
-                    showCancelButton: true,
-                    confirmButtonColor: "#3085d6",
-                    cancelButtonColor: "#d33",
-                    confirmButtonText: "Yes, delete it!"
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        Swal.fire({
-                            title: "Deleted!",
-                            text: "Your file has been deleted.",
-                            icon: "success"
-                        });
-                    }
-                });
-                this.parentElement.parentElement.parentElement.remove();
-                localStorage.removeItem(`${id}`);
-            }
-        })
-    });
+    // deleteButtons.forEach((deleteButton) => {
+    //     deleteButton.addEventListener("click", async function () {
+    //         const id = this.getAttribute("data-id");
+    //         const deleteOneResponse = await controller.deleteOne(endpoints.users + `/${id}`);
+    //         if (deleteOneResponse) {
+    //             Swal.fire({
+    //                 title: "Are you sure?",
+    //                 text: "You won't be able to revert this!",
+    //                 icon: "warning",
+    //                 showCancelButton: true,
+    //                 confirmButtonColor: "#3085d6",
+    //                 cancelButtonColor: "#d33",
+    //                 confirmButtonText: "Yes, delete it!"
+    //             }).then((result) => {
+    //                 if (result.isConfirmed) {
+    //                     Swal.fire({
+    //                         title: "Deleted!",
+    //                         text: "Your file has been deleted.",
+    //                         icon: "success"
+    //                     });
+    //                 }
+    //             });
+    //             this.parentElement.parentElement.parentElement.remove();
+    //             localStorage.removeItem(`${userId}`);
+    //         }
+    //     })
+    // });
 
 });
